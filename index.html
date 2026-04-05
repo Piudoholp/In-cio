@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piu Promoções | Ofertas de Eletrônicos</title>
+  <meta name="description" content="As melhores promoções de eletrônicos, gamer, informática e acessórios." />
+  <style>
+    :root{
+      --bg:#0b0f19; --card:#121a2b; --muted:#9fb0d0; --text:#eef3ff;
+      --pri:#22d3ee; --pri2:#a78bfa; --ok:#4ade80;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#090d16,#0b0f19);color:var(--text)}
+    .wrap{max-width:1150px;margin:0 auto;padding:16px}
+    .hero{padding:18px;border:1px solid #26314a;background:linear-gradient(120deg,#1f2a44,#122036);border-radius:18px}
+    h1{margin:0 0 8px;font-size:clamp(28px,5vw,48px)}
+    p{margin:0;color:var(--muted)}
+    .chips{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .chip{padding:8px 12px;border:1px solid #334665;border-radius:999px;background:#101a2e;font-size:13px}
+    .top{margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+    .card{background:var(--card);border:1px solid #25324c;border-radius:14px;overflow:hidden}
+    .img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#0f1626}
+    .body{padding:12px}
+    .title{font-size:16px;font-weight:800;line-height:1.25;min-height:42px}
+    .meta{margin-top:4px;color:var(--muted);font-size:12px}
+    .price{margin-top:8px;display:flex;align-items:center;gap:8px}
+    .new{font-size:22px;font-weight:900;color:var(--ok)}
+    .old{color:#7384a5;text-decoration:line-through;font-size:13px}
+    .cta{margin-top:10px;display:block;text-align:center;padding:10px;border-radius:10px;
+      background:linear-gradient(90deg,var(--pri),var(--pri2));color:#06101a;font-weight:800}
+    .sec{margin-top:18px}
+    footer{margin:26px 0 8px;color:#7f90b0;font-size:12px}
+    .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(8,12,22,.92);border-top:1px solid #24324d;padding:10px}
+    .sticky a{display:block;max-width:700px;margin:0 auto;text-align:center;padding:12px;border-radius:12px;
+      background:linear-gradient(90deg,#22d3ee,#a78bfa);font-weight:900;color:#04111a}
+    @media(min-width:760px){.sticky{display:none}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>🔥 Piu Promoções</h1>
+      <p>As melhores ofertas de eletrônicos, informática, gamer e acessórios.</p>
+      <div class="chips">
+        <span class="chip">Atualizado diariamente</span>
+        <span class="chip">Links de afiliado</span>
+        <span class="chip">Top ofertas do momento</span>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2>Top ofertas</h2>
+      <div class="top">
+        <article class="card">
+          <img class="img" src="https://via.placeholder.com/600x600?text=Headset+Gamer" alt="Headset Gamer" />
+          <div class="body">
+            <div class="title">Headset Gamer RGB com microfone</div>
+            <div class="meta">Amazon • Gamer</div>
+            <div class="price"><span class="new">R$ 149,90</span><span class="old">R$ 239,90</span></div>
+            <a class="cta" href="https://seu-link-aqui-1.com" target="_blank" rel="noopener">Comprar com desconto</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="img" src="https://via.placeholder.com/600x600?text=Mouse+Sem+Fio" alt="Mouse sem fio" />
+          <div class="body">
+            <div class="title">Mouse Sem Fio Ergonômico</div>
+            <div class="meta">Shopee • Informática</div>
+            <div class="price"><span class="new">R$ 69,90</span><span class="old">R$ 119,90</span></div>
+            <a class="cta" href="https://seu-link-aqui-2.com" target="_blank" rel="noopener">Ver oferta</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="img" src="https://via.placeholder.com/600x600?text=Smartwatch" alt="Smartwatch" />
+          <div class="body">
+            <div class="title">Smartwatch Bluetooth com monitor cardíaco</div>
+            <div class="meta">Mercado Livre • Eletrônicos</div>
+            <div class="price"><span class="new">R$ 199,90</span><span class="old">R$ 329,90</span></div>
+            <a class="cta" href="https://seu-link-aqui-3.com" target="_blank" rel="noopener">Comprar agora</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Piu Promoções • Este site pode receber comissão por links de afiliado.
+    </footer>
+  </main>
+
+  <div class="sticky">
+    <a href="https://seu-link-aqui-1.com" target="_blank" rel="noopener">🔥 Ver melhor oferta agora</a>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear()</script>
+</body>
+  </html>
